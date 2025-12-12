@@ -65,7 +65,7 @@ func main() {
 
 			//validamos errores
 			if err != nil {
-				return mcp.NewToolResultErrorFromErr("falló peticion a github", err), nil
+				return mcp.NewToolResultErrorFromErr("falló petición a github", err), nil
 			}
 			defer resp.Body.Close()
 
